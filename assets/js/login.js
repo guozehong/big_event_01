@@ -49,6 +49,7 @@ $(function () {
     })
     //登录表单事件
     $('#form_login').on('submit', function (e) {
+        console.log($(this).serialize());
         e.preventDefault();
         $.ajax({
             type: 'post',
